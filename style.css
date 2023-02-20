@@ -1,0 +1,14 @@
+button {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    /*          Eigenschaft      Dauer  Verzögerung*/
+    transition: background-color .3s    .2s;
+}
+
+button:hover {
+    background-color: brown;
+}
