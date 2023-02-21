@@ -1,0 +1,9 @@
+nav {
+    height: 0;
+    overflow: hidden;
+    transition: height 1.5s;
+}
+
+nav.open {
+    height: 100vh;
+}

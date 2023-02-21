@@ -1,0 +1,30 @@
+@keyframes circle {
+    50% {
+        clip-path: circle(150px at 50% 30px);
+    }
+    100% {
+        clip-path: circle(100px at 100% 100px);
+    }
+}
+
+body {
+    margin: 0;
+}
+header {
+    height: 200px;
+    background: url('https://images.pexels.com/photos/600114/pexels-photo-600114.jpeg');
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50px at 0 100px);
+    animation: 
+        circle /* Animation-Name */
+        10s /* Dauer */
+        forwards /* Fill-Mode */
+        cubic-bezier(1, -0.66, 0, 1.63) /* Beschleuniung */
+        infinite /* Wiederholung */
+        alternate /* Richtung */;
+}
+
+header:hover {
+    animation-play-state: paused;
+}
